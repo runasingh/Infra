@@ -5,6 +5,7 @@ resource "aws_instance" "web" {
   tags = {
     Name = var.name
     Env = upper("production")
+    Dept = "eng"
   }
 }
 
