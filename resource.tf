@@ -3,7 +3,7 @@ resource "aws_instance" "web" {
   instance_type = var.hardware
 
   tags = {
-    Name = var.name
+    Name = "Server2"
     Env = upper("production")
     Dept = "eng"
   }
